@@ -161,7 +161,7 @@ elif menu == "Normalitas":
 
     st.subheader("⚗️ Normalitas")
     st.write("Normalitas (N) adalah satuan konsentrasi larutan yang menyatakan jumlah ekivalen zat terlarut dalam setiap 1 liter larutan.Normalitas banyak digunakan dalam titrasi asam–basa, redoks, dan analisis volumetri, karena langsung berkaitan dengan stoikiometri reaksi.")
-    st.write("Rumus Normalitas adalah N=ekivalen/Volume(L); Jika massanya diketahui maka N=massa zat (g). faktor ekivalen/ Mr(g/mol).Volume(L)")
+    st.write("Rumus Normalitas adalah N=ekivalen/Volume(L); Jika massanya diketahui maka N=massa zat (g) × faktor ekivalen/ Mr(g/mol) × Volume(L)")
     st.write("Faktor ekivalen (sering disebut n-factor atau valensi) dalam reaksi asam-basa adalah jumlah ion hidrogen (H^+) yang dilepaskan oleh satu mol asam atau jumlah ion hidroksida (OH^-) yang dilepaskan/diterima oleh satu mol basa dalam suatu reaksi netralisasi. ")
     st.write("Perhatian‼️ Pada metode perhitungan dibawah ini, jika senyawa Mr (massa atom relatif) yang anda gunakan tidak ada pada data base kami, maka silahkan pilih metode menggunakan massa")
     metode = st.radio(
@@ -239,9 +239,9 @@ elif menu == "% b/v":
     st.write("(persen berat per volume) adalah satuan konsentrasi yang menyatakan jumlah zat (dalam gram) yang terdapat dalam setiap 100 mL larutan. Satuan % b/v sering digunakan dalam kimia analitik, farmasi, dan laboratorium untuk menyatakan konsentrasi larutan padat dalam cairan.")
     st.markdown("""
 ### Rumus:
-- Cari %b/v= massa zat terlarut (g) /volume total campuran(mL) .100%
-- Cari massa = %b/v / volume (mL) × 100%
-- Cari Volume = %b/v / massa (g) × 100%
+- Cari %b/v= massa zat terlarut (g) /volume total campuran(mL) × 100%
+- Cari massa = %b/v × volume (mL) / 100
+- Cari Volume = massa (g) / %b/v × 100
 """)
     
     sub = st.radio(
@@ -284,9 +284,9 @@ elif menu == "% b/b":
     
     st.markdown("""
 ### Rumus:
-- Cari %b/b= massa zat terlarut (g)/massa total campuran (g) .100%
-- Cari massa zat terlarut (g) = %b/b / massa campuran (g) × 100%
-- Cari massa campuran (g) = %b/b / massa zat terlarut (g) × 100%
+- Cari %b/b= massa zat terlarut (g)/massa total campuran (g) × 100%
+- Cari massa zat terlarut (g) = %b/b × massa campuran (g) / 100
+- Cari massa campuran (g) = massa zat terlarut (g) / %b/b × 100
 """)
 
     sub = st.radio(
@@ -352,9 +352,9 @@ elif menu == "% v/v":
 
     st.markdown("""
 ### Rumus:
-- Cari %v/v= volume zat terlarut (mL) /volume total campuran (mL) .100%
-- Cari volume zat terlarut (mL) = %v/v / volume campuran (mL) × 100%
-- Cari volume campuran (mL) = %v/v / volume zat terlarut (mL) × 100%
+- Cari %v/v= volume zat terlarut (mL) /volume total campuran (mL) × 100%
+- Cari volume zat terlarut (mL) = %v/v × volume campuran (mL) / 100
+- Cari volume campuran (mL) = volume zat terlarut (mL) / %v/v × 100
 """)
 
     sub = st.radio(
