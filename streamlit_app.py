@@ -14,6 +14,7 @@ st.write(
     "Kalkulator ini membantu perhitungan kimia analisis "
     "agar pengguna lebih memahami konsep perhitungan kimia."
 )
+st.write("✨setiap tanda . (titik) pada hasil perhitungan menandakan koma, bukan ribuan✨")
 
 # =========================
 # MENU UTAMA
@@ -54,7 +55,7 @@ mr_database = {
 # =========================
 if menu == "Faktor Pengenceran":
 
-    st.subheader("⚗️ Faktor Pengenceran")
+    st.subheader("🫗 Faktor Pengenceran 🫗")
     st.write("Faktor pengenceran (FP) adalah bilangan yang menyatakan seberapa besar suatu larutan diencerkan dibandingkan larutan awalnya. Faktor pengenceran banyak digunakan dalam kimia analitik, farmasi, biologi, dan analisis instrumen (misalnya AAS) untuk menghitung konsentrasi akhir setelah pengenceran.")
     st.write("Rumus mencari FP adalah volume labu takar/volume yang dipipet")
     st.write("Rumus untuk pengenceran adalah Consentration1.Volume1=Consentration2.Volume2")
@@ -86,6 +87,7 @@ if menu == "Faktor Pengenceran":
             else:
                 V1 = (C2 * V2) / C1
                 st.success(f"Volume diambil = **{V1:.3f} mL**")
+
 
 # =========================
 # MOLARITAS
@@ -157,7 +159,7 @@ elif menu == "Normalitas":
 # =========================
 elif menu == "mg/L":
 
-    st.subheader("⚗️ mg/L")
+    st.subheader("👩🏻‍🔬 mg/L 👩🏻‍🔬")
     st.write("konsentrasi mg/L (ppm) adalah cara menyatakan konsentrasi zat sebagai jumlah miligram zat terlarut dalam setiap 1 liter (L) larutan. Satuan mg/L sangat umum digunakan dalam analisis kimia, lingkungan, farmasi, dan AAS, terutama untuk menyatakan kadar zat dalam konsentrasi rendah.")
     st.write("untuk mencari massa, kita bisa menggunakan rumus massa(mg)= konsentrasi (mg/L).Volume (L)")
     sub = st.radio(
